@@ -1,0 +1,21 @@
+CREATE DATABASE IF NOT EXISTS portafolio;
+USE portafolio;
+
+CREATE TABLE IF NOT EXISTS contactame (
+    Clave INT AUTO_INCREMENT PRIMARY KEY,
+    Nombre VARCHAR(100) NOT NULL,
+    CorreoElectronico VARCHAR(150) NOT NULL,
+    Trabajo VARCHAR(100),
+    BuscaDe VARCHAR(100),
+    Presupuesto VARCHAR(100),
+    Detalles TEXT
+);
+
+-- Insertar datos de ejemplo
+INSERT INTO contactame (Nombre, CorreoElectronico, Trabajo, BuscaDe, Presupuesto, Detalles) VALUES
+('Juan Pérez', 'juan@example.com', 'Diseñador', 'Proyecto Web', 500.00, 'Necesito una página web corporativa.'),
+('María López', 'maria@example.com', 'Desarrollador', 'Aplicación Móvil', 1200.00, 'Aplicación para Android y iOS.'),
+('Carlos Ramírez', 'carlos@example.com', 'Freelancer', 'Asesoría', 300.00, 'Consultoría en marketing digital.');
+
+-- Consultar los datos
+SELECT * FROM contactame;
