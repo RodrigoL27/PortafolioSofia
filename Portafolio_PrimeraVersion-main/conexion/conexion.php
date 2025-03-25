@@ -1,10 +1,10 @@
 <?php
 class Conexion {
     function ConexionBD() {
-        $host = 'bokodunv0mr6n0ynpcyj-mysql.services.clever-cloud.com';
-        $dbname = 'bokodunv0mr6n0ynpcyj';
-        $username = 'utijatmm3tul4fmb';
-        $password = '8N91YepQRaGb9fvWeS6g';
+        $host = 'bsqd8wkyzrcfy5m0ujxt-mysql.services.clever-cloud.com';
+        $dbname = 'bsqd8wkyzrcfy5m0ujxt';
+        $username = 'u7xnpuhe1qmcdoao';
+        $password = 'VzZYSSiz3YIUA1tswjqQ';
 
         try {
             $conn = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
