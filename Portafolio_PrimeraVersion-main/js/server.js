@@ -3,6 +3,10 @@ const mysql = require('mysql2/promise');
 const bodyParser = require('body-parser');
 const path = require('path');
 
+
+require('dotenv').config();
+
+
 const app = express();
 
 
